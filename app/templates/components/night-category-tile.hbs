@@ -1,18 +1,13 @@
-<div class="night-appetizer">
-  <ul>
-    {{#each appetizer as |item|}}
-    <li>{{item.name}} <br> {{item.description}}<br> ${{item.price}}</li>
-    {{/each}}
-  </ul>
-</div>
+<div class="wrapper">
 
-<div class="night-soup">
-  <ul>
-    {{#each soup as |item|}}
-    <li>{{item.name}}<br> {{item.description}}, ${{item.price}}</li>
-    {{/each}}
-  </ul>
-</div>
+  <div class="night-appetizer">
+    <h2>Appetizers</h2>
+    <ul>
+      {{#each appetizer as |item|}}
+      <li>{{item.name}} <br> {{item.description}}<br> ${{item.price}}</li>
+      {{/each}}
+    </ul>
+  </div>
 
 <div class="night-combo">
   <ul>
@@ -22,82 +17,103 @@
   </ul>
 </div>
 
-<div class="night-vegetable">
-  <ul>
-    {{#each vegetable as |item|}}
-    <li>{{item.name}} <br> {{item.description}}, ${{item.price}}</li>
-    {{/each}}
-  </ul>
-</div>
+  <div class="night-combo">
+    <h2>Combination Dinners</h2>
+    <ul>
+      {{#each combinationdinner as |item|}}
+      <li>{{item.name}} <br> {{item.description}}, ${{item.price}}</li>
+      {{/each}}
+    </ul>
+  </div>
 
-<div class="night-pork">
-  <ul>
-    {{#each pork as |item|}}
-    <li>{{item.name}} <br>{{item.description}},  ${{item.price}}</li>
-    {{/each}}
-  </ul>
-</div>
+  <div class="night-vegetable">
+    <h2>Vegetable Dishes</h2>
+    <ul>
+      {{#each vegetable as |item|}}
+      <li>{{item.name}} <br> {{item.description}}, ${{item.price}}</li>
+      {{/each}}
+    </ul>
+  </div>
 
-<div class="night-beef">
-  <ul>
-    {{#each beef as |item|}}
-    <li>{{item.name}} <br>{{item.description}},  ${{item.price}}</li>
-    {{/each}}
-  </ul>
-</div>
+  <div class="night-pork">
+    <h2>Pork</h2>
+    <ul>
+      {{#each pork as |item|}}
+      <li>{{item.name}} <br>{{item.description}},  ${{item.price}}</li>
+      {{/each}}
+    </ul>
+  </div>
 
-<div class="night-seafood">
-  <ul>
-    {{#each seafood as |item|}}
-    <li>{{item.name}} <br>{{item.description}},    ${{item.price}}</li>
-    {{/each}}
-  </ul>
-</div>
+  <div class="night-beef">
+    <h2>Beef</h2>
+    <ul>
+      {{#each beef as |item|}}
+      <li>{{item.name}} <br>{{item.description}},  ${{item.price}}</li>
+      {{/each}}
+    </ul>
+  </div>
 
-<div class="night-poultry">
-  <ul>
-    {{#each poultry as |item|}}
-    <li>{{item.name}} <br>{{item.description}},  ${{item.price}}</li>
-    {{/each}}
-  </ul>
-</div>
+  <div class="night-seafood">
+    <h2>Seafood</h2>
+    <ul>
+      {{#each seafood as |item|}}
+      <li>{{item.name}} <br>{{item.description}},    ${{item.price}}</li>
+      {{/each}}
+    </ul>
+  </div>
 
-<div class="night-eggfoo">
-  <ul>
-    {{#each eggfoo as |item|}}
-    <li>{{item.name}} <br> {{item.description}}, ${{item.price}}</li>
-    {{/each}}
-  </ul>
-</div>
+  <div class="night-poultry">
+    <h2>Poultry</h2>
+    <ul>
+      {{#each poultry as |item|}}
+      <li>{{item.name}} <br>{{item.description}},  ${{item.price}}</li>
+      {{/each}}
+    </ul>
+  </div>
 
-<div class="night-friedrice">
-  <ul>
-    {{#each friedrice as |item|}}
-    <li>{{item.name}} <br> {{item.description}}, ${{item.price}}</li>
-    {{/each}}
-  </ul>
-</div>
+  <div class="night-eggfoo">
+    <h2>Egg Foo Young</h2>
+    <ul>
+      {{#each eggfoo as |item|}}
+      <li>{{item.name}} <br> {{item.description}}, ${{item.price}}</li>
+      {{/each}}
+    </ul>
+  </div>
 
-<div class="night-noodle">
-  <ul>
-    {{#each noodles as |item|}}
-    <li>{{item.name}} <br> {{item.description}}, ${{item.price}}</li>
-    {{/each}}
-  </ul>
-</div>
+  <div class="night-friedrice">
+    <h2>Fried Rice</h2>
+    <ul>
+      {{#each friedrice as |item|}}
+      <li>{{item.name}} <br> {{item.description}}, ${{item.price}}</li>
+      {{/each}}
+    </ul>
+  </div>
 
-<div class="night-american">
-  <ul>
-    {{#each americanfood as |item|}}
-    <li>{{item.name}} <br> {{item.description}},  ${{item.price}}</li>
-    {{/each}}
-  </ul>
-</div>
+  <div class="night-noodle">
+    <h2>Noodles</h2>
+    <ul>
+      {{#each noodles as |item|}}
+      <li>{{item.name}} <br> {{item.description}}, ${{item.price}}</li>
+      {{/each}}
+    </ul>
+  </div>
 
-<div class="night-beverage">
-  <ul>
-    {{#each beverages as |item|}}
-    <li>{{item.name}} <br> ${{item.price}}</li>
-    {{/each}}
-  </ul>
+  <div class="night-american">
+    <h2>American Food</h2>
+    <ul>
+      {{#each americanfood as |item|}}
+      <li>{{item.name}} <br> {{item.description}},  ${{item.price}}</li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class="night-beverage">
+    <h2>Beverages</h2>
+    <ul>
+      {{#each beverages as |item|}}
+      <li>{{item.name}} <br> ${{item.price}}</li>
+      {{/each}}
+    </ul>
+  </div>
+
 </div>

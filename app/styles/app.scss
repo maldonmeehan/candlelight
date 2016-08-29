@@ -29,3 +29,10 @@ padding: 0;
 h1  {
   font-family: 'Fontdiner Swanky', cursive;
 }
+
+.wrapper {
+  margin: 1em;
+  li{
+    list-style-type: none;
+  }
+}
