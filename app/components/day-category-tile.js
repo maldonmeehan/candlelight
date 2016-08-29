@@ -5,5 +5,7 @@ export default Ember.Component.extend({
 
   classics: Ember.computed.filterBy('items', 'category', 'classic combos'),
 
-  biscuits: Ember.computed.filterBy('items', 'category', 'biscuits and side orders')
+  biscuits: Ember.computed.filterBy('items', 'category', 'biscuits and side orders'),
+
+  breakfasts: Ember.computed.filterBy('items', 'category', 'biscuits and side orders')
   });
