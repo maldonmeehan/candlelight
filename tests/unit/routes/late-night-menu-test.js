@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:menu-happy-hour', 'Unit | Route | menu happy hour', {
+moduleFor('route:late-night-menu', 'Unit | Route | late night menu', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });
