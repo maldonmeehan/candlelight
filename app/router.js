@@ -10,7 +10,7 @@ Router.map(function() {
   this.route('events');
   this.route('menu-day');
   this.route('menu-night');
-  this.route('menu-happy-hour');
+  this.route('late-night-menu');
 });
 
 export default Router;
