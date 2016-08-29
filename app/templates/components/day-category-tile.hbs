@@ -1,11 +1,95 @@
+<h3>Candlelight Breakfast Specials</h3>
+
+<h3>Pancakes and such</h3>
 <ul>
 {{#each pancakes as |item|}}
   <li>{{item.name}} || {{item.description}} || {{item.price}}</li>
 {{/each}}
 </ul>
 
+<h3>Classic Combos</h3>
 <ul>
 {{#each classics as |item|}}
+  <li>{{item.name}} || {{item.description}} || {{item.price}}</li>
+{{/each}}
+</ul>
+
+<h3>Biscuits and Side Orders</h3>
+<ul>
+{{#each biscuits as |item|}}
+  <li>{{item.name}} || {{item.description}} || {{item.price}}</li>
+{{/each}}
+</ul>
+
+<h3>Candlelight Breakfast</h3>
+<ul>
+{{#each breakfasts as |item|}}
+  <li>{{item.name}} || {{item.description}} || {{item.price}}</li>
+{{/each}}
+</ul>
+
+<h3>Omelettes</h3>
+<ul>
+{{#each omelettes as |item|}}
+  <li>{{item.name}} || {{item.description}} || {{item.price}}</li>
+{{/each}}
+</ul>
+
+<h3>Hot Sandwiches</h3>
+<ul>
+{{#each hotSandwiches as |item|}}
+  <li>{{item.name}} || {{item.description}} || {{item.price}}</li>
+{{/each}}
+</ul>
+
+<h3>Cold Sandwiches</h3>
+<ul>
+{{#each coldSandwiches as |item|}}
+  <li>{{item.name}} || {{item.description}} || {{item.price}}</li>
+{{/each}}
+</ul>
+
+<h3>Burgers</h3>
+<ul>
+{{#each burgers as |item|}}
+  <li>{{item.name}} || {{item.description}} || {{item.price}}</li>
+{{/each}}
+</ul>
+
+<h3>Side Orders</h3>
+<ul>
+{{#each sideOrders as |item|}}
+  <li>{{item.name}} || {{item.description}} || {{item.price}}</li>
+{{/each}}
+</ul>
+
+<h3>Hot Dinners</h3>
+<ul>
+{{#each hotDinners as |item|}}
+  <li>{{item.name}} || {{item.description}} || {{item.price}}</li>
+{{/each}}
+</ul>
+
+<h3>Soups and Salads</h3>
+<ul>
+{{#each soups as |item|}}
+  <li>{{item.name}} || {{item.description}} || {{item.price}}</li>
+{{/each}}
+{{#each salads as |item|}}
+  <li>{{item.name}} || {{item.description}} || {{item.price}}</li>
+{{/each}}
+</ul>
+
+<h3>New Added Attractions</h3>
+<ul>
+  {{#each newAttractions as |item|}}
+    <li>{{item.name}} || {{item.description}} || {{item.price}}</li>
+  {{/each}}
+</ul>
+
+<h3>Beverages</h3>
+<ul>
+{{#each dayBeverages as |item|}}
   <li>{{item.name}} || {{item.description}} || {{item.price}}</li>
 {{/each}}
 </ul>
