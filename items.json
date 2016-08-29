@@ -1105,7 +1105,6 @@
   "spicy": false,
   "price": "2.50"
   },
-,
   {"menuTime": "day",
   "name": "Clubhouse",
   "category": "cold sandwiches",
@@ -1281,7 +1280,6 @@
   "spicy": null,
   "price": "6.25"
   },
-
   {"menuTime": "day",
   "name": "Taco Salad",
   "category": "newly added attractions",
@@ -1302,5 +1300,5 @@
   "description": "1/3 lb hamburger patty cooked to your preference, served with cottage cheese, peaches and sliced tomatoes",
   "spicy": null,
   "price": "7.95"
-  },
+  }
 ]}
