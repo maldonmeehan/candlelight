@@ -9,14 +9,13 @@
     </ul>
   </div>
 
-  <div class="night-soup">
-    <h2>Soup</h2>
-    <ul>
-      {{#each soup as |item|}}
-      <li>{{item.name}}<br> {{item.description}}, ${{item.price}}</li>
-      {{/each}}
-    </ul>
-  </div>
+<div class="night-combo">
+  <ul>
+    {{#each combinationdinner as |item|}}
+    <li>{{spicy item}} {{item.name}} <br> {{item.description}}, ${{item.price}}</li>
+    {{/each}}
+  </ul>
+</div>
 
   <div class="night-combo">
     <h2>Combination Dinners</h2>
