@@ -44,58 +44,30 @@
   {"menuTime": "night",
   "name": "Egg Flower Soup",
   "category": "soup",
-  "description": "small",
+  "description": "small, large",
   "spicy": false,
-  "price": "3.00"
-  },
-  {"menuTime": "night",
-  "name": "Egg Flower Soup",
-  "category": "soup",
-  "description": "large",
-  "spicy": false,
-  "price": "5.00"
+  "price": "3.00, 5.00"
   },
   {"menuTime": "night",
   "name": "Hot and Sour Soup",
   "category": "soup",
-  "description": "small",
+  "description": "small, large",
   "spicy": false,
-  "price": "3.00"
-  },
-  {"menuTime": "night",
-  "name": "Hot and Sour Soup",
-  "category": "soup",
-  "description": "large",
-  "spicy": false,
-  "price": "5.00"
+  "price": "3.00, 5.00"
   },
   {"menuTime": "night",
   "name": "Wonton Soup",
   "category": "soup",
-  "description": "small",
+  "description": "small, large",
   "spicy": false,
-  "price": "3.50"
-  },
-  {"menuTime": "night",
-  "name": "Wonton Soup",
-  "category": "soup",
-  "description": "large",
-  "spicy": false,
-  "price": "5.50"
+  "price": "3.50, 5.50"
   },
   {"menuTime": "night",
   "name": "Spinach Beancurd",
   "category": "soup",
-  "description": "small",
+  "description": "small, large",
   "spicy": false,
-  "price": "3.50"
-  },
-  {"menuTime": "night",
-  "name": "Spinach Beancurd",
-  "category": "soup",
-  "description": "large",
-  "spicy": false,
-  "price": "5.50"
+  "price": "3.50, 5.50"
   },
   {"menuTime": "night",
   "name": "Combo 1",
