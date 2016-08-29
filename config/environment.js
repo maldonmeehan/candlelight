@@ -13,6 +13,13 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+      apiKey: "AIzaSyBI7pKOe2x-JUlFbnONZ4tAWX50kfsHkH8",
+      authDomain: "candlelight-41b9d.firebaseapp.com",
+      databaseURL: "https://candlelight-41b9d.firebaseio.com",
+      storageBucket: "candlelight-41b9d.appspot.com",
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
