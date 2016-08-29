@@ -1,1 +1,7 @@
-{{outlet}}
+<h1>Breakfast and Lunch Menu</h1>
+
+<ul>
+  {{#each model as |item|}}
+    <li>{{day-tile item=item}}</li>
+  {{/each}}
+</ul>
