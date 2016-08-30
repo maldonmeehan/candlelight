@@ -24,7 +24,7 @@ padding: 0;
       color: tomato;
     }
   }
-  font-family: 'Fontdiner Swanky', cursive;
+  font-family: $font-stack;
   border-bottom: 1px solid black;
   background-color: #FFCF82;
 }
@@ -37,7 +37,7 @@ padding: 0;
   }
 }
 
-h1, h2 {
+h1, h2, h4 {
   font-family: $font-stack
 }
 
@@ -63,8 +63,6 @@ li {
   background-position: center;
   background-size: cover;
   height: 50vh;
-
-
 }
 
 .welcome {
@@ -84,4 +82,8 @@ li {
 
 .index {
   text-align: center;
+}
+
+.nightman {
+  padding-left: 1em;
 }
