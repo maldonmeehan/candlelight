@@ -9,6 +9,7 @@ export default Ember.Component.extend({
         center: this.get('map').center((45.526196), (-122.587018)),
         zoom: 15
       };
+
       this.get('map').findMap(container, options);
     }
   }
