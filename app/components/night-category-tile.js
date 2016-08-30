@@ -5,6 +5,8 @@ export default Ember.Component.extend({
 
   soup: Ember.computed.filterBy('items', 'category', 'soup'),
 
+  combinationdinner: Ember.computed.filterBy('items', 'category', 'combination dinner'),
+
   vegetable: Ember.computed.filterBy('items', 'category', 'vegetable'),
 
   pork: Ember.computed.filterBy('items', 'category', 'pork'),
@@ -21,7 +23,9 @@ export default Ember.Component.extend({
 
   noodles: Ember.computed.filterBy('items', 'category', 'noodles'),
 
-  americanfood: Ember.computed.filterBy('items', 'category', 'american food'),
+  nightburgers: Ember.computed.filterBy('items', 'category', 'night burgers'),
+
+  nightsandwiches: Ember.computed.filterBy('items', 'category', 'night sandwiches'),
 
   beverages: Ember.computed.filterBy('items', 'category', 'beverages'),
 
