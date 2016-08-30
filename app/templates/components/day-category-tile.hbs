@@ -1,4 +1,206 @@
-<div class="wrapper">
+<div class="row">
+  <div class="col-sm-9 col-md-offset-3">
+    <h3>Dine in or takeout</h3>
+  </div>
+  <div class="col-sm-9 col-md-offset-3 specials">
+    <h3>Candlelight Breakfast Specials $6.95</h3>
+  </div>
+
+  <div class="col-sm-9 col-md-offset-3  specials">
+    <ul>
+      <li>Monday: <br>Waffle with 2 eggs and a choice of 2 links or 2 bacon</li>
+      <li>Tuesday: <br>Breakfast burrito served with salsa and sour cream and a choice of homefries or hashbrowns</li>
+      <li>Wednesday: <br>Chicken fried steak served with 2 eggs, a choice of homefries or hashbrowns and toast</li>
+      <li>Thursday: <br>2 pieces of french toast served with 2 eggs and 1/4 pound sausage pattie</li>
+      <li>Friday: <br>Bacon and Cheddar omelette served a choice of homefries or hashbrowns and toast</li>
+      <li>Saturday: <br>Eggs Benedict seved with served a choice of homefries or hashbrowns. <br> Spinach omelett with swiss cheese and mushrooms, covered with hollandaise sauce and a choice of homefries or hashbrowns and toast</li>
+      <li>Sunday: <br>Eggs Benedict seved with served a choice of homefries or hashbrowns. <br> Spinach omelett with swiss cheese and mushrooms, covered with hollandaise sauce and a choice of homefries or hashbrowns and toast</li>
+    </ul>
+    <div class="col-sm-9 col-md-offset-3">
+      <h3>Classic Combos</h3>
+      <h4>No substitutions please.</h4>
+    </div>
+    <div class="col-sm-9 col-md-offset-3">
+      <ul>
+        {{#each classics as |item|}}
+        <li>{{item.name}}<br>
+          {{item.description}}
+          ${{item.price}}</li>
+          {{/each}}
+        </ul>
+    <div class="row">
+      <div class="col-xs-8 col-sm-6">
+        <h3>Pancakes and Such</h3>
+        <ul>
+        {{#each pancakes as |item|}}
+          <li>{{item.name}}<br>
+            {{item.description}}
+            ${{item.price}}</li>
+        {{/each}}
+        </ul>
+      </div>
+      <div class="col-xs-4 col-sm-6">
+        <h3>Biscuits and Side Orders</h3>
+        <ul>
+        {{#each biscuits as |item|}}
+        <li>{{item.name}}<br>
+          {{item.description}}
+          ${{item.price}}</li>
+        {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-xs-8 col-sm-6">
+        <h3>Candlelight Breakfast</h3>
+        <ul>
+        {{#each breakfasts as |item|}}
+        <li>{{item.name}}<br>
+          {{item.description}}
+          ${{item.price}}</li>
+        {{/each}}
+        </ul>
+      </div>
+      <div class="col-xs-4 col-sm-6">
+        <h3>Omelettes</h3>
+        <ul>
+        {{#each omelettes as |item|}}
+        <li>{{item.name}}<br>
+          {{item.description}}
+          ${{item.price}}</li>
+        {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-9 col-md-offset-3">
+    <div class="row">
+      <div class="col-xs-8 col-sm-6">
+        <h3>Hot Sandwiches</h3>
+        <ul>
+        {{#each hotSandwiches as |item|}}
+        <li>{{item.name}}<br>
+          {{item.description}}
+          ${{item.price}}</li>
+        {{/each}}
+        </ul>
+      </div>
+      <div class="col-xs-4 col-sm-6">
+        <h3>Cold Sandwiches</h3>
+        <ul>
+        {{#each coldSandwiches as |item|}}
+        <li>{{item.name}}<br>
+          {{item.description}}
+          ${{item.price}}</li>
+        {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-9 col-md-offset-3">
+    Level 1: .col-sm-9
+    <div class="row">
+      <div class="col-xs-8 col-sm-6">
+        <h3>Burgers</h3>
+        <ul>
+        {{#each burgers as |item|}}
+        <li>{{item.name}}<br>
+          {{item.description}}
+          ${{item.price}}</li>
+        {{/each}}
+        </ul>
+      </div>
+      <div class="col-xs-4 col-sm-6">
+        <h3>Side Orders</h3>
+        <ul>
+        {{#each sideOrders as |item|}}
+        <li>{{item.name}}<br>
+          {{item.description}}
+          ${{item.price}}</li>
+        {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-9 col-md-offset-3">
+    Level 1: .col-sm-9
+    <div class="row">
+      <div class="col-xs-8 col-sm-6">
+        <ul>
+        {{#each hotDinners as |item|}}
+        <li>{{item.name}}<br>
+          {{item.description}}
+          ${{item.price}}</li>
+        {{/each}}
+        </ul>
+      </div>
+      <div class="col-xs-4 col-sm-6">
+        <h3>New Added Attractions</h3>
+        <ul>
+          {{#each newAttractions as |item|}}
+          <li>{{item.name}}<br>
+            {{item.description}}
+            ${{item.price}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-9 col-md-offset-3">
+    Level 1: .col-sm-9
+    <div class="row">
+      <div class="col-xs-8 col-sm-6">
+        <h3>Soups</h3>
+        <ul>
+        {{#each soups as |item|}}
+        <li>{{item.name}}<br>
+          {{item.description}}
+          ${{item.price}}</li>
+        {{/each}}
+        </ul>
+      </div>
+      <div class="col-xs-4 col-sm-6">
+        <h3>Salads</h3>
+        <ul>
+        {{#each salads as |item|}}
+        <li>{{item.name}}<br>
+          {{item.description}}
+          ${{item.price}}</li>
+        {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-9 col-md-offset-3">
+    <div class="row">
+      <div class="col-xs-8 col-sm-6">
+        <h3>Beverages</h3>
+        <ul>
+        {{#each dayBeverages as |item|}}
+        <li>{{item.name}}<br>
+          {{item.description}}
+          ${{item.price}}</li>
+        {{/each}}
+        </ul>
+      </div>
+      <div class="col-xs-4 col-sm-6">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- <div class="wrapper">
 
   <h3>Dine in or takeout</h3>
 
@@ -127,7 +329,7 @@
   </div>
 
   <div class="day-soup">
-    <h3>Soups and Salads</h3>
+    <h3>Soups</h3>
     <ul>
     {{#each soups as |item|}}
     <li>{{item.name}}<br>
@@ -138,6 +340,7 @@
   </div>
 
   <div class="day-salad">
+    <h3>Salads</h3>
     <ul>
     {{#each salads as |item|}}
     <li>{{item.name}}<br>
@@ -168,4 +371,4 @@
     {{/each}}
     </ul>
   </div>
-</div>
+</div> -->

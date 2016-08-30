@@ -1,121 +1,147 @@
-<div class="wrapper">
+<div class="container">
 
-  <h3>Dine in or takeout</h3>
 
-  <div class="night-appetizer">
-    <h2>Appetizers</h2>
+  <h3 class="menu-head">Dine in or takeout</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Appetizers</h2>
+      <ul>
+        {{#each appetizer as |item|}}
+        <li>{{spicy item}} {{item.name}} {{item.description}}<br> ${{item.price}}</li>
+        {{/each}}
+      </ul>
+    </div>
+
+  <div class="col-md-6">
+    <h2>Soup</h2>
     <ul>
-      {{#each appetizer as |item|}}
-      <li>{{item.name}} <br> {{item.description}}<br> ${{item.price}}</li>
+      {{#each soup as |item|}}
+      <li>{{spicy item}}{{item.name}}: {{item.description}}<br>${{item.price}}</li>
       {{/each}}
     </ul>
   </div>
-
-<div class="night-combo">
-  <ul>
-    {{#each combinationdinner as |item|}}
-    <li>{{spicy item}} {{item.name}} <br> {{item.description}}, ${{item.price}}</li>
-    {{/each}}
-  </ul>
 </div>
 
-  <div class="night-combo">
+<div class="row">
+  <div class="combo">
     <h2>Combination Dinners</h2>
     <ul>
       {{#each combinationdinner as |item|}}
-      <li>{{item.name}} <br> {{item.description}}, ${{item.price}}</li>
+      <li>{{spicy item}} {{item.name}}  {{item.description}}<br>${{item.price}}</li>
       {{/each}}
     </ul>
   </div>
+</div>
 
-  <div class="night-vegetable">
+<div class="row">
+  <div class="col-md-4">
     <h2>Vegetable Dishes</h2>
     <ul>
       {{#each vegetable as |item|}}
-      <li>{{item.name}} <br> {{item.description}}, ${{item.price}}</li>
+      <li>{{spicy item}} {{item.name}} {{item.description}}<br> ${{item.price}}</li>
       {{/each}}
     </ul>
   </div>
 
-  <div class="night-pork">
+  <div class="col-md-4">
     <h2>Pork</h2>
     <ul>
       {{#each pork as |item|}}
-      <li>{{item.name}} <br>{{item.description}},  ${{item.price}}</li>
+      <li>{{spicy item}} {{item.name}} {{item.description}}<br>  ${{item.price}}</li>
       {{/each}}
     </ul>
   </div>
 
-  <div class="night-beef">
+  <div class="col-md-4">
     <h2>Beef</h2>
     <ul>
       {{#each beef as |item|}}
-      <li>{{item.name}} <br>{{item.description}},  ${{item.price}}</li>
+      <li>{{spicy item}} {{item.name}}   {{item.description}}<br>  ${{item.price}}</li>
       {{/each}}
     </ul>
   </div>
+</div>
 
-  <div class="night-seafood">
+<div class="row">
+  <div class="col-md-4">
     <h2>Seafood</h2>
     <ul>
       {{#each seafood as |item|}}
-      <li>{{item.name}} <br>{{item.description}},    ${{item.price}}</li>
+      <li>{{spicy item}} {{item.name}} {{item.description}}<br> ${{item.price}}</li>
       {{/each}}
     </ul>
   </div>
 
-  <div class="night-poultry">
+  <div class="col-md-4">
     <h2>Poultry</h2>
     <ul>
       {{#each poultry as |item|}}
-      <li>{{item.name}} <br>{{item.description}},  ${{item.price}}</li>
+      <li>{{spicy item}} {{item.name}} {{item.description}}<br>  ${{item.price}}</li>
       {{/each}}
     </ul>
   </div>
 
-  <div class="night-eggfoo">
+  <div class="col-md-4">
     <h2>Egg Foo Young</h2>
     <ul>
       {{#each eggfoo as |item|}}
-      <li>{{item.name}} <br> {{item.description}}, ${{item.price}}</li>
+      <li>{{spicy item}} {{item.name}}  {{item.description}}<br> ${{item.price}}</li>
       {{/each}}
     </ul>
   </div>
 
-  <div class="night-friedrice">
+</div>
+
+<div class="row">
+  <div class="col-md-6">
     <h2>Fried Rice</h2>
     <ul>
       {{#each friedrice as |item|}}
-      <li>{{item.name}} <br> {{item.description}}, ${{item.price}}</li>
+      <li>{{spicy item}} {{item.name}}  {{item.description}}<br> ${{item.price}}</li>
       {{/each}}
     </ul>
   </div>
 
-  <div class="night-noodle">
+  <div class="col-md-6">
     <h2>Noodles</h2>
     <ul>
       {{#each noodles as |item|}}
-      <li>{{item.name}} <br> {{item.description}}, ${{item.price}}</li>
+      <li>{{spicy item}} {{item.name}} {{item.description}}<br> ${{item.price}}</li>
       {{/each}}
     </ul>
   </div>
+</div>
 
-  <div class="night-american">
-    <h2>American Food</h2>
+<div class="row">
+
+  <div class="col-md-4">
+    <h2>Burgers</h2>
     <ul>
-      {{#each americanfood as |item|}}
-      <li>{{item.name}} <br> {{item.description}},  ${{item.price}}</li>
+      {{#each nightburgers as |item|}}
+      <li>{{item.name}} {{item.description}}<br>  ${{item.price}}</li>
       {{/each}}
     </ul>
   </div>
 
-  <div class="night-beverage">
+  <div class="col-md-4">
+    <h2>Sandwiches</h2>
+    <ul>
+      {{#each nightsandwiches as |item|}}
+      <li>{{spicy item}} {{item.name}} {{item.description}}<br>  ${{item.price}}</li>
+      {{/each}}
+    </ul>
+  </div>
+
+
+  <div class="col-md-4">
     <h2>Beverages</h2>
     <ul>
       {{#each beverages as |item|}}
-      <li>{{item.name}} <br> ${{item.price}}</li>
+      <li>{{spicy item}} {{item.name}}<br> ${{item.price}}</li>
       {{/each}}
     </ul>
   </div>
+</div>
+
 
 </div>
