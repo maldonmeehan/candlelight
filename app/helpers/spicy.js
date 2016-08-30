@@ -4,7 +4,7 @@ export function spicy(params) {
   var spicyness = params[0].get('spicy');
 
   if(spicyness === true) {
-    return Ember.String.htmlSafe('<i class="fa fa-frown-o" aria-hidden="true"></i>');
+    return Ember.String.htmlSafe('&#10087;');
   }
 }
 
