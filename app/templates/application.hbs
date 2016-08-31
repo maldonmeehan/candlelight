@@ -1,17 +1,22 @@
 <div class="navigation">
   <div class="header">
     <img src="assets/img/candle-128.png" alt="" />
-  <h1>Candlelight</h1>
+      {{#link-to 'index'}}<h1 class="logo">Candlelight</h1>{{/link-to}}
   </div>
   <div class="nav-items">
     {{#link-to 'index'}}Home{{/link-to}}
     {{#link-to 'contact'}}Contact{{/link-to}}
     {{#link-to 'menu-day'}}Day Menu{{/link-to}}
     {{#link-to 'menu-night'}}Night Menu{{/link-to}}
+    {{#link-to 'events'}}Events{{/link-to}}
   </div>
 </div>
 
 {{outlet}}
+
+
+<footer>
+<h4>Follow Us on FaceBook:</h4>
 
 <footer class="footer-distributed">
 
@@ -61,5 +66,6 @@
     </div>
 
   </div>
+
 
 </footer>
