@@ -102,7 +102,7 @@ li {
   text-shadow: -2px -2px 10px orange, 2px -2px 10px orange, -2px 2px 10px orange, 2px 2px 10px orange;
 }
 
-.breakfast-combo, .pancakes, .biscuits, .hot-dinner, .attractions, .bevies {
+.breakfast-combo, .pancakes, .biscuits, .hot-dinner, .attractions, .bevies, .omelettes, .biscuits, .hot-sandwiches, .cold-sandwiches, .day-burger, .lunch-side, .new-attractions, .day-soup, .day-salad{
   text-align: $text-align;
 }
 
@@ -159,4 +159,17 @@ li {
   display: inline-block;
   font-size: 16px;
   border-radius: 12px;
+}
+
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
 }
