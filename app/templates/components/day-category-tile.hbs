@@ -77,6 +77,7 @@
   <div class="row">
     <div class="col-md-4">
      <h3>Hot Sandwiches</h3>
+     <h5>Add soup or salad for $1.50</h5>
       <ul>
         {{#each hotSandwiches as |item|}}
         <li>{{item.name}}<br>
@@ -171,7 +172,7 @@
     <ul>
     {{#each dayBeverages as |item|}}
     <li>{{item.name}}<br>
-      {{item.description}}
+      {{item.description}}<br>
       ${{item.price}}</li>
     {{/each}}
     </ul>
