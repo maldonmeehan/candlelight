@@ -78,6 +78,11 @@
 	vertical-align: middle;
 }
 
+.footer-center:hover .fa-map-marker:before{
+  color: tomato;
+  opacity:0.5;
+}
+
 .footer-distributed .footer-center i.fa-envelope{
 	font-size: 17px;
 	line-height: 38px;
@@ -144,6 +149,11 @@
 
 	margin-right: 3px;
 	margin-bottom: 5px;
+}
+
+.location-hover:hover .fa-map-marker:before{
+  color:blue;
+  opacity:0.4;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
