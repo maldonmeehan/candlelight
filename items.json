@@ -588,9 +588,9 @@
   "price": "6.25"
   },
   {"menuTime": "night",
-  "name": "Soda",
+  "name": "Soda: RC, 7UP, Diet 7UP",
   "category": "beverages",
-  "description": "RC, 7UP, Diet 7UP",
+  "description": "",
   "spicy": null,
   "price": "2.00"
   },
@@ -609,9 +609,9 @@
   "price": "2.00"
   },
   {"menuTime": "night",
-  "name": "Juice",
+  "name": "Juice: Orange, Apple, V8, Tomato, Pineapple, Grapefruit",
   "category": "beverages",
-  "description": "Orange, Apple, V8, Tomato, Pineapple, Grapefruit",
+  "description": "",
   "spicy": null,
   "price": "2.50"
   },
