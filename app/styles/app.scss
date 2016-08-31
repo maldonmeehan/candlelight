@@ -6,8 +6,10 @@ padding: 0;
 }
 
 .map-display {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navigation {
@@ -63,4 +65,21 @@ li {
 
 .late-night {
   text-align: center;
+}
+
+.contact-page {
+  padding-top: 25px;
+  text-align: center;
+}
+
+#map-button {
+  background-color: tomato;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
 }
