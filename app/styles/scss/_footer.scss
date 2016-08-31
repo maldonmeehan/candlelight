@@ -21,6 +21,7 @@
 
 .footer-distributed .footer-left{
 	width: 40%;
+
 }
 
 /* The company logo */
@@ -61,6 +62,7 @@
 
 .footer-distributed .footer-center{
 	width: 35%;
+
 }
 
 .footer-distributed .footer-center i{
@@ -74,6 +76,11 @@
 	line-height: 42px;
 	margin: 10px 15px;
 	vertical-align: middle;
+}
+
+.footer-center:hover .fa-map-marker:before{
+  color: tomato;
+  opacity:0.5;
 }
 
 .footer-distributed .footer-center i.fa-envelope{
@@ -142,6 +149,11 @@
 
 	margin-right: 3px;
 	margin-bottom: 5px;
+}
+
+.location-hover:hover .fa-map-marker:before{
+  color:blue;
+  opacity:0.4;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */

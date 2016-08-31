@@ -6,6 +6,7 @@ margin: 0;
 padding: 0;
 }
 
+
 .map-display {
   height: 600px;
   width: 600px;
@@ -74,7 +75,7 @@ li {
 .welcome {
    color: #fff;
    line-height: 1.5em;
-   letter-spacing: -0.025em;
+   letter-spacing: 2px;
    font-weight: 300;
    text-align: center;
  }
@@ -90,12 +91,9 @@ li {
   text-align: center;
 }
 
-.nightman {
-  padding-left: 1em;
-}
-
-.dayman {
-  padding-left: 1em;
+.nightman, .dayman {
+  text-align: $text-align;
+  padding-bottom: 1em;
 }
 
 .logo {
@@ -115,7 +113,7 @@ li {
   font-family: $font-stack;
   font-size: 20px;
   text-align: $text-align;
-  padding-top: 1em;
+  padding-top: 2em;
 }
 
 .box-around {
@@ -133,7 +131,18 @@ li {
   text-align: center;
 }
 
+.happy-header {
+  display: flex;
+  justify-content: center;
+  h2 {
+    padding-top: 2em;
+  }
+}
 
+.hh-items {
+  font-size: 18px;
+  padding-top: 2em;
+}
 
 //events styling
 .events {
