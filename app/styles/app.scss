@@ -6,8 +6,10 @@ padding: 0;
 }
 
 .map-display {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navigation {
@@ -62,5 +64,10 @@ li {
 }
 
 .late-night {
+  text-align: center;
+}
+
+.contact-page {
+  padding-top: 25px;
   text-align: center;
 }
