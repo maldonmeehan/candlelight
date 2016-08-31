@@ -1,162 +1,188 @@
 <div class="container">
-  <div class="row">
-    <div class="breakfast-combo">
-      <h3>Candlelight Breakfast Specials $6.95</h3>
-      <ul>
-        <li><b>Monday</b>: <br> Waffle with 2 eggs and a choice of 2 links or 2 bacon</li>
-        <li><b>Tuesday</b>: <br> Breakfast burrito served with salsa and sour cream and a choice of homefries or hashbrowns</li>
-        <li><b>Wednesday</b>: <br> Chicken fried steak served with 2 eggs, a choice of homefries or hashbrowns and toast</li>
-        <li><b>Thursday</b>: <br> 2 pieces of french toast served with 2 eggs and 1/4 pound sausage pattie</li>
-        <li><b>Friday</b>: <br> Bacon and Cheddar omelette served a choice of homefries or hashbrowns and toast</li>
-        <li><b>Saturday</b>: <br> Eggs Benedict seved with served a choice of homefries or hashbrowns. <br> Spinach omelett with swiss cheese and mushrooms, covered with hollandaise sauce and a choice of homefries or hashbrowns and toast</li>
-        <li><b>Sunday</b>: <br> Eggs Benedict seved with served a choice of homefries or hashbrowns. <br> Spinach omelett with swiss cheese and mushrooms, covered with hollandaise sauce and a choice of homefries or hashbrowns and toast</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="col-md-6 pancakes">
-    <h3>Pancakes and Such</h3>
-    <ul>
-    {{#each pancakes as |item|}}
-      <li>{{item.name}}<br>
-        {{item.description}}
-        ${{item.price}}</li>
-    {{/each}}
-    </ul>
-  </div>
 
   <div class="row">
-    <div class="combo">
-      <h3>Classic Combos</h3>
-      <h5>No substitutions please.</h5>
-      <ul>
-        {{#each classics as |item|}}
-        <li><b>{{item.name}}</b><br>
-          {{item.description}}
-          ${{item.price}}</li>
-          {{/each}}
-        </ul>
-    </div>
-  </div>
-
-  <div class="biscuits">
-    <h3>Biscuits and Side Orders</h3>
-    <ul>
-      {{#each biscuits as |item|}}
-      <li>{{item.name}}
-        {{item.description}}<br>
-        ${{item.price}}</li>
-        {{/each}}
-      </ul>
-    </div>
-
-  <div class="row">
-  <div class="col-md-6">
-    <h3>Candlelight Breakfast</h3>
-    <h5>served with homefries or hashbrowns and choice of toast</h5>
-    <ul>
-    {{#each breakfasts as |item|}}
-    <li>{{item.name}}<br>
-      {{item.description}}<br>
-      ${{item.price}}</li>
-    {{/each}}
-    </ul>
-  </div>
-
-  <div class="col-md-6">
-    <h3>Omelettes</h3>
-    <h5>3 egg omelets, served with homefries or hashbrowns and choice of toast</h5>
-    <ul>
-    {{#each omelettes as |item|}}
-    <li>{{item.name}}<br>
-      {{item.description}}<br>
-      ${{item.price}}</li>
-    {{/each}}
-    </ul>
-  </div>
-</div>
-
-  <div class="row">
-    <div class="col-md-4">
-     <h3>Hot Sandwiches</h3>
-     <h5>Add soup or salad for $1.50</h5>
-      <ul>
-        {{#each hotSandwiches as |item|}}
-        <li>{{item.name}}<br>
-          {{item.description}}<br>
-          ${{item.price}}</li>
-          {{/each}}
-        </ul>
-    </div>
-
-  <div class="col-md-4">
-    <h3>Cold Sandwiches</h3>
-      <h5>Add soup or salad for $1.50</h5>
-    <ul>
-    {{#each coldSandwiches as |item|}}
-    <li>{{item.name}}<br>
-      {{item.description}}<br>
-      ${{item.price}}</li>
-    {{/each}}
-    </ul>
-  </div>
-
-  <div class="col-md-4">
-    <h3>Burgers</h3>
-    <h5>Add soup or salad for $1.50</h5>
-    <ul>
-    {{#each burgers as |item|}}
-    <li>{{item.name}}<br>
-      {{item.description}}<br>
-      ${{item.price}}</li>
-    {{/each}}
-    </ul>
-  </div>
-</div>
-
-<div class="row hot-dinner">
-  <h3>Hot Dinners</h3>
-  <h5>served with fries and garlic toast and with soup or salad</h5>
-  <ul>
-    {{#each hotDinners as |item|}}
-    <li>{{item.name}}<br>
-      {{item.description}}
-      ${{item.price}}</li>
-      {{/each}}
-    </ul>
-  </div>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h3>Side Orders</h3>
-      <ul>
-        {{#each sideOrders as |item|}}
-        <li>{{item.name}}<br>
-          {{item.description}}
-          ${{item.price}}</li>
-          {{/each}}
-        </ul>
-    </div>
-    <div class="col-md-4">
-      <h3>Soups</h3>
-      <ul>
-        {{#each soups as |item|}}
-        <li>{{item.name}}<br>
-          {{item.description}}
-          ${{item.price}}</li>
-          {{/each}}
-        </ul>
-    </div>
-      <div class="col-md-4">
-        <h3>Salads</h3>
+    <div class="col-sm-6">
+      <div class="breakfast-combo">
+        <h3>Daily Breakfast Specials</h3>
         <ul>
-          {{#each salads as |item|}}
-          <li>{{item.name}}<br>
+          <li><b>Monday</b>: <br> Waffle with 2 eggs and a choice of 2 links or 2 bacon. $6.95</li>
+          <li><b>Tuesday</b>: <br> Breakfast burrito served with salsa and sour cream and a choice of homefries or hashbrowns. $6.95</li>
+          <li><b>Wednesday</b>: <br> Chicken fried steak served with 2 eggs, a choice of homefries or hashbrowns and toast. $6.95</li>
+          <li><b>Thursday</b>: <br> 2 pieces of french toast served with 2 eggs and 1/4 pound sausage pattie. $6.95</li>
+          <li><b>Friday</b>: <br> Bacon and Cheddar omelette served a choice of homefries or hashbrowns and toast. $6.95</li>
+          <li><b>Saturday &amp; Sunday</b>: <br> Eggs Benedict seved with served a choice of homefries or hashbrowns. $6.95<br> Spinach omelett with swiss cheese and mushrooms, covered with hollandaise sauce and a choice of homefries or hashbrowns and toast. $6.95</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="breakfast-combo">
+        <h3>Candlelight Breakfast</h3>
+        <h5>served with homefries or hashbrowns and choice of toast</h5>
+        <ul>
+        {{#each breakfasts as |item|}}
+        <li><b>{{item.name}}</b><br>
+          {{item.description}} ${{item.price}}</li>
+        {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="combo">
+        <h3>Classic Combos</h3>
+        <h5>No substitutions please.</h5>
+        <ul>
+          {{#each classics as |item|}}
+          <li><b>{{item.name}}</b><br>
             {{item.description}}
             ${{item.price}}</li>
             {{/each}}
           </ul>
       </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="omelettes">
+        <h3>Omelettes</h3>
+        <h5>3 egg omelets, served with homefries or hashbrowns and choice of toast</h5>
+        <ul>
+        {{#each omelettes as |item|}}
+        <li><b>{{item.name}}</b><br>
+          {{item.description}} ${{item.price}}</li>
+        {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="pancakes">
+        <h3>Pancakes and Such</h3>
+        <ul>
+          {{#each pancakes as |item|}}
+          <li>{{item.name}} {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="biscuits">
+        <h3>Biscuits and Side Orders</h3>
+        <ul>
+          {{#each biscuits as |item|}}
+          <li>{{item.name}} {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="hot-sandwiches">
+        <h3>Hot Sandwiches</h3>
+        <h5>Add soup or salad for $1.50</h5>
+        <ul>
+          {{#each hotSandwiches as |item|}}
+            <li><b>{{item.name}}</b><br>
+            {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="cold-sandwiches">
+        <h3>Cold Sandwiches</h3>
+        <h5>Add soup or salad for $1.50</h5>
+        <ul>
+          {{#each coldSandwiches as |item|}}
+            <li><b>{{item.name}}</b><br>
+              {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="day-burger">
+        <h3>Burgers</h3>
+        <h5>Add soup or salad for $1.50</h5>
+        <ul>
+          {{#each burgers as |item|}}
+            <li><b>{{item.name}}</b><br>
+              {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="hot-dinner">
+        <h3>Hot Dinners</h3>
+        <h5>served with fries and garlic toast and with soup or salad</h5>
+        <ul>
+          {{#each hotDinners as |item|}}
+            <li><b>{{item.name}}</b><br>
+            {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="lunch-side">
+        <h3>Side Orders</h3>
+        <ul>
+          {{#each sideOrders as |item|}}
+          <li>{{item.name}} {{item.description}} ${{item.price}}</li>
+            {{/each}}
+          </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="new-attractions">
+        <h3>New Added Attractions</h3>
+        <ul>
+          {{#each newAttractions as |item|}}
+          <li>{{item.name}}<br>
+            {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="day-soup">
+        <h3>Soups</h3>
+        <ul>
+          {{#each soups as |item|}}
+          <li>{{item.name}} {{item.description}} ${{item.price}}</li>
+            {{/each}}
+          </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="day-salad">
+        <h3>Salads</h3>
+        <ul>
+          {{#each salads as |item|}}
+          <li>{{item.name}} {{item.description}} ${{item.price}}</li>
+            {{/each}}
+          </ul>
+      </div>
+    </div>
   </div>
 
   <div class="attractions">
