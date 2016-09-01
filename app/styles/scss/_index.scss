@@ -18,31 +18,6 @@ padding: 0;
   text-align: $text-align;
 }
 
-.navigation {
-  height: 125px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  a {
-    text-decoration: none;
-    color: black;
-    padding: 1em;
-    &:hover {
-      color: tomato;
-    }
-  }
-  font-family: $font-stack;
-  border-bottom: 1px solid black;
-  background-color: #FFCF82;
-}
-
-.header {
-  display: flex;
-  justify-content: flex-start;
-  h1 {
-    padding-top: 1em;
-  }
-}
 
 h1, h2, h3, h4 {
   font-family: $font-stack
