@@ -153,7 +153,7 @@
         <h3>New Added Attractions</h3>
         <ul>
           {{#each newAttractions as |item|}}
-          <li>{{item.name}}<br>
+          <li><b>{{item.name}}</b><br>
             {{item.description}} ${{item.price}}</li>
           {{/each}}
         </ul>
@@ -185,23 +185,12 @@
     </div>
   </div>
 
-  <div class="attractions">
-    <h3>New Added Attractions</h3>
-    <ul>
-      {{#each newAttractions as |item|}}
-      <li>{{item.name}}<br>
-        {{item.description}}<br>
-        ${{item.price}}</li>
-      {{/each}}
-    </ul>
-  </div>
 
   <div class="bevies">
     <h3>Beverages</h3>
     <ul>
     {{#each dayBeverages as |item|}}
-    <li>{{item.name}}<br>
-      ${{item.price}}</li>
+    <li>{{item.name}} ${{item.price}}</li>
     {{/each}}
     </ul>
   </div>
