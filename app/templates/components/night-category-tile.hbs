@@ -1,144 +1,172 @@
-<div class="container">
+<div class="container late-night">
   <span class="glyphicon glyphicon-fire warning"></span>= Spicy
-  <div class="row">
-    <div class="col-md-6">
-      <h2>Appetizers</h2>
-      <ul>
-        {{#each appetizer as |item|}}
-        <li>{{spicy item}} {{item.name}} {{item.description}}<br> ${{item.price}}</li>
-        {{/each}}
-      </ul>
+
+  <div class="row row-centered">
+    <div class="col-sm-6 col-centered">
+      <div class="card combo">
+        <h3 class="card-title">Combination Dinners</h3>
+        <ul>
+          {{#each combinationdinner as |item|}}
+          <li>{{spicy item}} <b>{{item.name}}</b><br> {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+      </div>
     </div>
-
-  <div class="col-md-6">
-    <h2>Soup</h2>
-    <ul>
-      {{#each soup as |item|}}
-      <li>{{spicy item}}{{item.name}}: {{item.description}}<br>${{item.price}}</li>
-      {{/each}}
-    </ul>
-  </div>
-</div>
-
-<div class="row">
-  <div class="combo">
-    <h2>Combination Dinners</h2>
-    <ul>
-      {{#each combinationdinner as |item|}}
-      <li>{{spicy item}} {{item.name}}  {{item.description}}<br>${{item.price}}</li>
-      {{/each}}
-    </ul>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-4">
-    <h2>Vegetable Dishes</h2>
-    <ul>
-      {{#each vegetable as |item|}}
-      <li>{{spicy item}} {{item.name}} {{item.description}}<br> ${{item.price}}</li>
-      {{/each}}
-    </ul>
   </div>
 
-  <div class="col-md-4">
-    <h2>Pork</h2>
-    <ul>
-      {{#each pork as |item|}}
-      <li>{{spicy item}} {{item.name}} {{item.description}}<br>  ${{item.price}}</li>
-      {{/each}}
-    </ul>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card card-block">
+        <h3 class="card-title">Appetizers</h3>
+        <ul>
+          {{#each appetizer as |item|}}
+          <li>{{spicy item}} <b>{{item.name}}</b> {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card card-block">
+        <h3 class="card-title">Soup</h3>
+        <ul>
+          {{#each soup as |item|}}
+          <li>{{spicy item}}<b>{{item.name}}</b>: {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
   </div>
 
-  <div class="col-md-4">
-    <h2>Beef</h2>
-    <ul>
-      {{#each beef as |item|}}
-      <li>{{spicy item}} {{item.name}}   {{item.description}}<br>  ${{item.price}}</li>
-      {{/each}}
-    </ul>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-4">
-    <h2>Seafood</h2>
-    <ul>
-      {{#each seafood as |item|}}
-      <li>{{spicy item}} {{item.name}} {{item.description}}<br> ${{item.price}}</li>
-      {{/each}}
-    </ul>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card card-block">
+        <h3 class="card-title">Fried Rice</h3>
+        <ul>
+          {{#each friedrice as |item|}}
+          <li>{{spicy item}} <b>{{item.name}}</b>  {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+    </div>
   </div>
 
-  <div class="col-md-4">
-    <h2>Poultry</h2>
-    <ul>
-      {{#each poultry as |item|}}
-      <li>{{spicy item}} {{item.name}} {{item.description}}<br>  ${{item.price}}</li>
-      {{/each}}
-    </ul>
+    <div class="col-sm-6">
+      <div class="card card-block">
+        <h3 class="card-title">Vegetable Dishes</h3>
+        <ul>
+          {{#each vegetable as |item|}}
+          <li>{{spicy item}} <b>{{item.name}}</b> {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
   </div>
 
-  <div class="col-md-4">
-    <h2>Egg Foo Young</h2>
-    <ul>
-      {{#each eggfoo as |item|}}
-      <li>{{spicy item}} {{item.name}}  {{item.description}}<br> ${{item.price}}</li>
-      {{/each}}
-    </ul>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card card-block">
+        <h3 class="card-title">Pork</h3>
+        <ul>
+          {{#each pork as |item|}}
+          <li>{{spicy item}} <b>{{item.name}}</b> {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+    </div>
   </div>
 
-</div>
-
-<div class="row">
-  <div class="col-md-6">
-    <h2>Fried Rice</h2>
-    <ul>
-      {{#each friedrice as |item|}}
-      <li>{{spicy item}} {{item.name}}  {{item.description}}<br> ${{item.price}}</li>
-      {{/each}}
-    </ul>
+    <div class="col-sm-6">
+      <div class="card card-block">
+        <h3 class="card-title">Beef</h3>
+        <ul>
+          {{#each beef as |item|}}
+          <li>{{spicy item}} <b>{{item.name}}</b> {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
   </div>
 
-  <div class="col-md-6">
-    <h2>Noodles</h2>
-    <ul>
-      {{#each noodles as |item|}}
-      <li>{{spicy item}} {{item.name}} {{item.description}}<br> ${{item.price}}</li>
-      {{/each}}
-    </ul>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-4">
-    <h2>Burgers</h2>
-    <ul>
-      {{#each nightburgers as |item|}}
-      <li>{{item.name}} {{item.description}}<br>  ${{item.price}}</li>
-      {{/each}}
-    </ul>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card card-block">
+        <h3 class="card-title">Seafood</h3>
+        <ul>
+          {{#each seafood as |item|}}
+          <li>{{spicy item}} <b>{{item.name}}</b> {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+    </div>
   </div>
 
-  <div class="col-md-4">
-    <h2>Sandwiches</h2>
-    <ul>
-      {{#each nightsandwiches as |item|}}
-      <li>{{spicy item}} {{item.name}} {{item.description}}<br>  ${{item.price}}</li>
-      {{/each}}
-    </ul>
+    <div class="col-sm-6">
+      <div class="card card-block">
+        <h3 class="card-title">Poultry</h3>
+        <ul>
+          {{#each poultry as |item|}}
+          <li>{{spicy item}} <b>{{item.name}}</b> {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
   </div>
 
-
-  <div class="col-md-4">
-    <h2>Beverages</h2>
-    <ul>
-      {{#each beverages as |item|}}
-      <li>{{spicy item}} {{item.name}}<br> ${{item.price}}</li>
-      {{/each}}
-    </ul>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card card-block">
+        <h3 class="card-title">Egg Foo Young</h3>
+        <ul>
+          {{#each eggfoo as |item|}}
+          <li>{{spicy item}} <b>{{item.name}}</b> {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+    </div>
   </div>
-</div>
 
+    <div class="col-sm-6">
+      <div class="card card-block">
+        <h3 class="card-title">Noodles</h3>
+        <ul>
+          {{#each noodles as |item|}}
+          <li>{{spicy item}} <b>{{item.name}}</b> {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card card-block">
+        <h3 class="card-title">Sandwiches</h3>
+        <ul>
+          {{#each nightsandwiches as |item|}}
+          <li>{{spicy item}} <b>{{item.name}}</b> {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+    </div>
+  </div>
+
+    <div class="col-sm-6">
+      <div class="card card-block">
+        <h3 class="card-title">Burgers</h3>
+        <ul>
+          {{#each nightburgers as |item|}}
+          <li><b>{{item.name}}</b> {{item.description}} ${{item.price}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-centered">
+    <div class="col-sm-6 col-centered">
+      <div class="card combo">
+        <h3 class="card-title">Beverages</h3>
+        <ul>
+          {{#each beverages as |item|}}
+          <li>{{spicy item}} <b>{{item.name}}</b> ${{item.price}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
