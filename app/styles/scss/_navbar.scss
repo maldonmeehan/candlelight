@@ -35,3 +35,12 @@ flex: none;
 width: 100%;
   }
 }
+
+.menu-links a{
+  text-decoration: none;
+  color: black;
+  padding: 1em;
+  &:hover {
+    color: tomato;
+  }
+}
