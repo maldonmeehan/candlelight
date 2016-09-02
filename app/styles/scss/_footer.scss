@@ -1,3 +1,7 @@
+.footer  {
+  position: fixed;
+}
+
 .footer-distributed{
 	background-color: #292c2f;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -198,4 +202,10 @@
 	background-attachment: fixed;
 	background-size: contain;
 	background-position: center;
+}
+
+
+html {
+ position: relative;
+ min-height: 100%;
 }
