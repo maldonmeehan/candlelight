@@ -15,21 +15,6 @@
       </div>
     </div>
     <div class="col-sm-6">
-      <div class="breakfast-combo">
-        <h3>Candlelight Breakfast</h3>
-        <h5>served with homefries or hashbrowns and choice of toast</h5>
-        <ul>
-        {{#each breakfasts as |item|}}
-        <li><b>{{item.name}}</b><br>
-          {{item.description}} ${{item.price}}</li>
-        {{/each}}
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-6">
       <div class="combo">
         <h3>Classic Combos</h3>
         <h5>No substitutions please.</h5>
@@ -40,6 +25,21 @@
             ${{item.price}}</li>
             {{/each}}
           </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="breakfast-combo">
+        <h3>Candlelight Breakfast</h3>
+        <h5>served with homefries or hashbrowns and choice of toast</h5>
+        <ul>
+        {{#each breakfasts as |item|}}
+        <li><b>{{item.name}}</b><br>
+          {{item.description}} ${{item.price}}</li>
+        {{/each}}
+        </ul>
       </div>
     </div>
 
@@ -85,7 +85,7 @@
     <div class="col-sm-6">
       <div class="hot-sandwiches">
         <h3>Hot Sandwiches</h3>
-        <h5>Add soup or salad for $1.50</h5>
+        <h5>Served with french fries. Add soup or salad for $1.50</h5>
         <ul>
           {{#each hotSandwiches as |item|}}
             <li><b>{{item.name}}</b><br>
@@ -97,7 +97,7 @@
     <div class="col-sm-6">
       <div class="cold-sandwiches">
         <h3>Cold Sandwiches</h3>
-        <h5>Add soup or salad for $1.50</h5>
+        <h5>Served with french fries. Add soup or salad for $1.50</h5>
         <ul>
           {{#each coldSandwiches as |item|}}
             <li><b>{{item.name}}</b><br>
@@ -112,7 +112,7 @@
     <div class="col-sm-6">
       <div class="day-burger">
         <h3>Burgers</h3>
-        <h5>Add soup or salad for $1.50</h5>
+        <h5>Served with french fries. Add soup or salad for $1.50</h5>
         <ul>
           {{#each burgers as |item|}}
             <li><b>{{item.name}}</b><br>
