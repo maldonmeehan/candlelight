@@ -1264,21 +1264,21 @@
   "category": "breakfast specials",
   "description": "Waffle with 2 eggs and a choice of 2 links or 2 bacon.",
   "spicy": null,
-  "price": "$6.95"
+  "price": "6.95"
   },
   {"menuTime": "day",
   "name": "Tuesday",
   "category": "breakfast specials",
   "description": "Breakfast burrito served with salsa and sour cream and a choice of homefries or hashbrowns.",
   "spicy": null,
-  "price": "$6.95"
+  "price": "6.95"
   },
   {"menuTime": "day",
   "name": "Wednesday",
   "category": "breakfast specials",
   "description": "Chicken fried steak served with 2 eggs, a choice of homefries or hashbrowns and toast.",
   "spicy": null,
-  "price": "$6.95"
+  "price": "6.95"
   },
   {"menuTime": "day",
   "name": "Thursday",
@@ -1292,14 +1292,14 @@
   "category": "breakfast specials",
   "description": "Bacon and Cheddar omelette served a choice of homefries or hashbrowns and toast.",
   "spicy": null,
-  "price": "$6.95"
+  "price": "6.95"
   },
   {"menuTime": "day",
   "name": "Saturday & Sunday",
   "category": "breakfast specials",
   "description": "Eggs Benedict seved with served a choice of homefries or hashbrowns. or Spinach omelett with swiss cheese and mushrooms, covered with hollandaise sauce and a choice of homefries or hashbrowns and toast.",
   "spicy": null,
-  "price": "$6.95"
+  "price": "6.95"
   },
   {"menuTime": "day",
   "name": "Taco Salad",

@@ -5,13 +5,11 @@
       <div class="breakfast-combo">
         <h3>Daily Breakfast Specials</h3>
         <ul>
-          <li><b>Monday</b>: <br> Waffle with 2 eggs and a choice of 2 links or 2 bacon. $6.95</li>
-          <li><b>Tuesday</b>: <br> Breakfast burrito served with salsa and sour cream and a choice of homefries or hashbrowns. $6.95</li>
-          <li><b>Wednesday</b>: <br> Chicken fried steak served with 2 eggs, a choice of homefries or hashbrowns and toast. $6.95</li>
-          <li><b>Thursday</b>: <br> 2 pieces of french toast served with 2 eggs and 1/4 pound sausage pattie. $6.95</li>
-          <li><b>Friday</b>: <br> Bacon and Cheddar omelette served a choice of homefries or hashbrowns and toast. $6.95</li>
-          <li><b>Saturday &amp; Sunday</b>: <br> Eggs Benedict seved with served a choice of homefries or hashbrowns. $6.95<br> Spinach omelett with swiss cheese and mushrooms, covered with hollandaise sauce and a choice of homefries or hashbrowns and toast. $6.95</li>
-        </ul>
+          {{#each breakfastSpecials as |item|}}
+          <li><b>{{item.name}}</b><br>
+            {{item.description}} ${{item.price}}</li>
+            {{/each}}
+          </ul>
       </div>
     </div>
     <div class="col-sm-6">
@@ -21,8 +19,7 @@
         <ul>
           {{#each classics as |item|}}
           <li><b>{{item.name}}</b><br>
-            {{item.description}}
-            ${{item.price}}</li>
+            {{item.description}} ${{item.price}}</li>
             {{/each}}
           </ul>
       </div>
@@ -142,7 +139,7 @@
         <h3>Side Orders</h3>
         <ul>
           {{#each sideOrders as |item|}}
-          <li>{{item.name}} {{item.description}} ${{item.price}}</li>
+          <li><b>{{item.name}}</b> {{item.description}} ${{item.price}}</li>
             {{/each}}
           </ul>
       </div>
@@ -167,7 +164,7 @@
         <h3>Soups</h3>
         <ul>
           {{#each soups as |item|}}
-          <li>{{item.name}} {{item.description}} ${{item.price}}</li>
+          <li><b>{{item.name}}</b> {{item.description}} ${{item.price}}</li>
             {{/each}}
           </ul>
       </div>
@@ -178,7 +175,7 @@
         <h3>Salads</h3>
         <ul>
           {{#each salads as |item|}}
-          <li>{{item.name}} {{item.description}} ${{item.price}}</li>
+          <li><b>{{item.name}}</b> {{item.description}} ${{item.price}}</li>
             {{/each}}
           </ul>
       </div>
@@ -190,7 +187,7 @@
     <h3>Beverages</h3>
     <ul>
     {{#each dayBeverages as |item|}}
-    <li>{{item.name}} ${{item.price}}</li>
+    <li><b>{{item.name}}</b> {{item.description}} ${{item.price}}</li>
     {{/each}}
     </ul>
   </div>
