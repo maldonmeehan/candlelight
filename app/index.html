@@ -24,11 +24,16 @@
         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
-    {{content-for "body"}}
+    <div id= "wrapper">
+      <div id="content">
+        {{content-for "body"}}
+      </div>
 
-    <script src="assets/vendor.js"></script>
-    <script src="assets/candlelight.js"></script>
-
-    {{content-for "body-footer"}}
+      <script src="assets/vendor.js"></script>
+      <script src="assets/candlelight.js"></script>
+      <div id="footer">
+        {{content-for "body-footer"}}
+      </div>
+    </div>
   </body>
 </html>
